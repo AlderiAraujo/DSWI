@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <main>
+        <h1>Crie uma Nova Conta</h1>
+    </main>
+    <form method="post" action="/criar-conta">
+        <fieldset>
+            <h2>Conta</h2>
+            <ul>
+                <li><label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required="required" autofocus="autofocus"></li>
+                <li><label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required="required" autofocus="autofocus"></li>
+                <li><label for="email">E-mail:</label>
+                    <input type="email"></li>
+                <li><label for="senha">Senha:</label>
+                    <input type="password"></li>
+                <li><label for="senha">Repita a senha:</label>
+                    <input type="password"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <h2>Endereço</h2>
+            <ul>
+                <li><label for="logradouro">Logradouro:</label>
+                    <input type="text" name="logradouro" id="logradouro" required="required" autofocus="autofocus"></li>
+                <li><label for="complemento">Complemento:</label>
+                    <input type="text" name="complemento" id="complemento" autofocus="autofocus"></li>
+                <li><label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" required="required" autofocus="autofocus"></li>
+                <li><label for="estado">Estado:</label>
+                    <select name="estado" id="estado">
+                        <option value="Selecione um estado">Selecione um estado</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    </select></li>
+                <li><label for="cep">CEP:</label>
+                    <input type="tel" pattern="[0-9]{5}-[0-9]{3}"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <h2>Perfil</h2>
+            <ul>
+                <li><label for="foto">Foto:</label>
+                <input type="file">
+                <p>Tamanho máximo de 700k, JPG, GIF ou PNG.</p></li>
+                <li><label for="nome-perfil">Nome:</label>
+                <input type="text" id="nome-perfil" name="nome-perfil" required="required" autofocus="autofocus"></li>
+                <li><label for="site">Site:</label>
+                <input type="url">
+                <p>Tem um site ou um blog? Coloque o endereço aqui.</p></li>
+                <li><label for="biografia">Biografia:</label>
+                <textarea name="biografia" rows="5" cols="20"></textarea></li>
+                <li><label for="genero">Gênero:</label>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="outro">Outro</label>
+                <input type="radio" id="outro" name="genero" value="outro"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <h2>E-mails</h2>
+            <ul>
+                <li><input type="checkbox" name="opcao1" id="opcao1">
+                <label for="opcao1">Tudo bem em enviar e-mails com mensagens de outros usuários.</label></li>
+                <li><input type="checkbox" name="opcao2" id="opcao2">
+                <label for="opcao2">Tudo bem em enviar e-mails ocasionais com promoções sobre outros produtos.</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Cria conta">
+        </fieldset>
+    </form>
+</body>
+</html>
