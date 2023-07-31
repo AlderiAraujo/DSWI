@@ -4,6 +4,9 @@
 
 <h4>GitHub Pages:</h4> [DSWI](https://alderiaraujo.github.io/DSWI/)
 
+<h4>Projeto DSWI</h4>
+* <a href="https://alderiaraujo.github.io/DSWI/projeto_DSWI/home.html">Projeto DSWI</a>
+  
 <h4>Lista Exercícios:</h4>
 * <a href="https://alderiaraujo.github.io/DSWI/exercicio1/home.html">Exercício 01</a><br>
 * <a href="https://alderiaraujo.github.io/DSWI/exercicio2/conta.html">Exercício 02</a><br>
